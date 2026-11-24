@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>¡Feliz Cumpleaños, ORLANDI! ❤️🎂✨</title>
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;400;600&family=Playfair+Display:ital,wght@0,400;1,500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Canvas de fondo con estrellas, fuegos artificiales, globos y corazones -->
+  <canvas id="bgCanvas"></canvas>
+
+  <!-- ESCENA 1: Estrellas coloridas viajando al centro -->
+  <section id="scene1" class="scene active">
+    <div class="portal-ring"></div>
+    <p class="subtitle-neon">UN UNIVERSO ESPECIAL PARA TI ✨</p>
+    <button class="btn-neon" onclick="goToScene(2)">Toca para abrir tu sorpresa</button>
+  </section>
+
+  <!-- ESCENA 2: Juegos artificiales y mensaje brillante -->
+  <section id="scene2" class="scene">
+    <h1 class="neon-title">¡FELIZ CUMPLEAÑOS<br>ORLANDI! ❤️</h1>
+    <p class="subtitle-pink">Hoy el cielo celebra el día en que naciste 🎆🎈</p>
+    <button class="btn-neon" onclick="goToScene(3)">Ver tu pastel 🎂</button>
+  </section>
+
+  <!-- ESCENA 3: Torta neón + Estrellas fugaces + Globos -->
+  <section id="scene3" class="scene">
+    <h2 class="hb-cursive">Happy Birthday</h2>
+
+    <div class="cake-container">
+      <div class="candles">
+        <div class="candle"><div class="flame"></div></div>
+        <div class="candle"><div class="flame"></div></div>
+        <div class="candle"><div class="flame"></div></div>
+      </div>
+      <div class="tier tier-top"></div>
+      <div class="tier tier-mid"></div>
+      <div class="tier tier-bot"></div>
+      <div class="cake-plate"></div>
+    </div>
+
+    <p class="cake-msg">
+      ¡Feliz cumpleaños, BB! ❤️🎈 Que tu día esté lleno de sonrisas, abrazos y sueños cumplidos.
+       🎂💖🎈<br>
+      <strong class="cake-hint">UNA CARTA TE ESPERA, HAZ CLIC ABAJO</strong>
+    </p>
+    <button class="btn-neon" onclick="goToScene(4)">Abrir mi carta 💌</button>
+  </section>
+
+  <!-- ESCENA 4: Carta romántica + Foto -->
+  <section id="scene4" class="scene">
+    <div class="letter-wrapper">
+      <div class="letter-card">
+        <h3>Para ti❤️</h3>
+        <p>
+          Feliz cumpleaños, Orlandi, espero  que lo hayas pasado bien y que este nuevo año de vida te abrace con todo lo lindo que mereces
+          , con calma, alegría y momentos que te hagan sentir bien de verdad
+          . Hoy es tu día y ojalá que, incluso entre días complicados, encuentres motivos para sonreír.
+        </p>
+        <p>
+         Que sigas cumpliendo tus metas, eres un chico trabajador y con muchas ganas de salir adelante, 
+         y eso es algo que admiro muchísimo de ti. Que valoras lo que cuesta conseguir las cosas
+         , los detalles sinceros y a las personas que están de verdad hace que seas alguien muy especial.
+          Ojalá este nuevo año de vida te acerque a cada sueño que tienes en mente y 
+         te dé la satisfacción de ver todo tu esfuerzo recompensado.
+        </p>
+        <p>
+           Sé que no estamos bien estos días, pero no me olvides de lo importante que eres para mí ni de lo que siento por ti.
+            Los días difíciles o los silencios no apagan un afecto que nació de forma tan sincera;
+             ojalá el tiempo nos dé paz y claridad
+           , pero hoy mi deseo es simplemente que estés bien y sientas que te quiero mucho.
+           
+        </p>
+        <p>
+           Hoy quería regalarte estas palabras desde lo más sincero de mí, deseándote un cumpleaños hermoso y recordándote que, 
+           a pesar de todo, sigues ocupando un lugar muy especial en mi corazón.
+            Te quiero mucho. ¡Feliz cumpleaños, Orlandi "MI NIÑO"! ❤️✨🎈
+        </p>
+        <p>
+          <strong>¡Feliz vuelta al sol, mi amor! Te quiero muchísimo. ❤️🎈</strong>
+        </p>
+
+        <div class="photo-frame">
+          <div class="polaroid">
+            <!-- REEMPLAZA 'foto.jpg' POR EL NOMBRE DE TU FOTO -->
+            <img src="foto.jpeg" alt="Nosotros" onerror="this.src='https://images.unsplash.com/photo-1518199266791-5375a83190b7?auto=format&fit=crop&w=500&q=80'">
+            <span> ORLANDI ❤️🎂✨</span>
+          </div>
+        </div>
+
+        <div class="nav-controls">
+          <button class="btn-small" onclick="goToScene(5)">Ver mensaje final 💖</button>
+          <button class="btn-small" onclick="goToScene(1)">Volver al inicio ↺</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ESCENA 5: Mensaje grande "Te quiero mucho" + Carita con corazones -->
+  <section id="scene5" class="scene">
+    <div class="love-face" aria-label="Carita con corazones">🥰</div>
+    <h1 class="big-love-text">TE QUIERO MUCHO</h1>
+    <p class="love-subtext">Hoy, mañana y siempre ❤️✨🎈</p>
+    <p>atte. TU NIÑA TOXICA😂🥺 </p>
+      <p>❤️MUCHOS BESOS....🥰😘 </p>
+    <button class="btn-neon" onclick="goToScene(1)">Repetir sorpresa ↺</button>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
